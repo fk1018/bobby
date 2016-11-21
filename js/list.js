@@ -47,6 +47,7 @@
                     //$(this).css("background-color", "pink");
                     alert("not working");
                 });
+                count++;
             }
 
 

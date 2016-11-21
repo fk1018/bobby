@@ -26,10 +26,11 @@
         productListDiv:[],
         populatePLDivs:function(){
                var pl = this.productList;
-            
+            	var count = 1;
+
                for(product in pl){
-                    $('body').append('<div class="col-md-4 col-lg-4 col-sm-12 col-xs-12"><img src="'+pl[product].imageURLs.sm+'"> '+ pl[product].ProductInfo.Brand + " " + pl[product].ProductInfo.p_product_description + "$" + pl[product].ProductInfo.p_product_price+' </div>')
-                  
+                    $('body').append('<div id = '+count+'><div class="col-md-4 col-lg-4 col-sm-12 col-xs-12"><img src="'+pl[product].imageURLs.sm+'"> '+ pl[product].ProductInfo.Brand + " " + pl[product].ProductInfo.p_product_description + "$" + pl[product].ProductInfo.p_product_price+' </div>')
+                  count++
                     //$('body').append('<div class="col-md-4 col-lg-4 col-sm-12 col-xs-12"> '+pl[product].ProductInfo.Brand +'</div>')
                     //$('body').append(pl[product].ProductInfo.p_product_description)
                     //$('body').append("$" +pl[product].ProductInfo.p_product_price)
@@ -41,7 +42,14 @@
  					//$('#header').append('<img src="'+pl[product].imageURLs.sm+'">')
   
                }
-             
+               
+               $(this).attr('div').hover(function(){
+			        //$(this).css("background-color", "yellow");
+			        alert("working");
+			        }, function(){
+			        //$(this).css("background-color", "pink");
+			        alert("not working");
+			    });
                $('#header').append('<img src="'+pl[product].imageURLs.lg+'">')
                $('#header').append(pl[product].ProductInfo.p_product_bullets_json.Value)
                //.css("list-style-type, "bullet");

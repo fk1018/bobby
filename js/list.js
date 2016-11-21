@@ -14,13 +14,13 @@
             }).done(function(data){
                window.Lowes.list.productList = data.ProductsList
                window.Lowes.list.populatePLDivs()
-               window.Lowes.list.populateTopDiv()
+               
             })
         },
         init:function(){
             this.getProducts()
             this.populatePLDivs()
-            this.populateTopDiv()
+            
         },
         productList:[],
         productListDiv:[],

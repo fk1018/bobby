@@ -1,0 +1,19 @@
+#header
+{ 
+  border-color: #504e4e; 
+  border-width:3px; 
+  border-style:solid; 
+  background:#a2a0a0;
+  padding: 20px 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.theItem {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border: 3px solid #504e4e;
+    background: #a2a0a0;
+    padding: 20px 20px;
+}

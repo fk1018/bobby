@@ -4,7 +4,7 @@
 
     Lowes.list = {
         createProductDiv: (product)=> {
-            console.log(product);
+            //compile template
         },
         getProducts: ()=> {
             $.ajax({
@@ -21,7 +21,7 @@
         populatePLDivs: ()=> {
             var pl = this.Lowes.list.productList
             for (let product of pl) {
-                //
+                //insertProdustListDivs into body
             }
         },
         productList: [],

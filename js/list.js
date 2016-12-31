@@ -32,5 +32,5 @@
         </div>`
     }
 
-    window.Lowes = Lowes;
-})(window.Lowes, jQuery);
+    window.Lowes = Lowes
+})(window.Lowes, jQuery)

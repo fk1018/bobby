@@ -1,9 +1,10 @@
-(function(Lowes){
-    Lowes.app = {
-        init:function(){
-            Lowes.list.init()
+;
+(function(Lowes) {
+    window.Lowes.app = {
+        init: function() {
+            window.Lowes.list.init()
         }
     }
 })(window.Lowes)
 
-Lowes.app.init()
+window.Lowes.app.init()
